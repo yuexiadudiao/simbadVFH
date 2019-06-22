@@ -122,7 +122,7 @@ public class VFH1_3_1{
         	}
         	else
         	{
-        		saveTrajectory(20);
+        		//saveTrajectory(20);
             	if(getCounter()%20==0)//为防止剧烈晃动，每10帧做一次
             	{System.out.println("-----------------------------------------------------------------");
                     //++++++++思考
@@ -310,7 +310,12 @@ public class VFH1_3_1{
             	}
         	}
         }
-		public double distanceGoal() //检查是否到达目的地
+        
+        /*计算到目标的距离，目前以此为停止条件
+         * 
+         *
+         */
+		public double distanceGoal() 
         { 
 			Point3d currentPos = new Point3d(); 
 			getCoords(currentPos); //当前坐标
@@ -318,7 +323,8 @@ public class VFH1_3_1{
 		
 			return currentPos.distance(goalPos); 
 	
-        } 
+        }
+		
         public int getControlcode(int n)
         {
         	if(n>=180 && n<=360)

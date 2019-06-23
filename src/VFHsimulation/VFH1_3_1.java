@@ -37,7 +37,7 @@ package VFHsimulation;
  * ################################ FIX ################################
  * Fix Version:1.3
  * Fix Author :yin
- * Fix Date   :2016-8-19 
+ * Fix Date   :2016-8-19
  * Fix About  :
  * 1，如果目标在量程范围内可见，设目标为刚好可见【解决了目标附近有
  * 障碍的情况】
@@ -45,7 +45,7 @@ package VFHsimulation;
  * ################################ FIX ################################
  * Fix Version:1.3.1
  * Fix Author :yin
- * Fix Date   :2016-8-19 
+ * Fix Date   :2016-8-19
  * Fix About  :
  * 1，修改了目标锁定，如果目标可见就锁定
  * 2，证明了锁定目标逻辑的重要性
@@ -73,30 +73,30 @@ public class VFH1_3_1{
 
         RangeSensorBelt sonars;
 
-        
+
         Vector2d goalcoord = new Vector2d(8,8); //存储目标点
         Vector3d goal3d = new Vector3d(8, 0,8);
         double carwidth=0.3;
-        
+
         //--------------------计算航向偏角用--------------------
         Point3d nowcoord = new Point3d();//此刻的坐标
         double errorangle;//计算航向偏角
-        
+
         //--------------------处理ladar数据用--------------------
         double ladar[] = new double[361];//存储机器人ladr数据
         int ladar_bin[] = new int[361];//存储机器人ladr的二值数据
         double ladarmin,ladarmax,ladarmid;
-        
+
         float liangcheng=5f;//量程
         double m_threshold;//环境动态阈值，其与环境疏密有关
-        
+
         int numcount = 0;//记录区块数量
         int startcount[] = new int[400];//记录区块起点编号
         int endcount[] = new int[400];//记录区块终点编号
         double startangle[] = new double[400];//记录区块起线弧度
         double endangle[] = new double[400];//记录区块终线弧度
         double midangle[] = new double[400];//记录区块中线弧度
-              
+
         double minangle;
         double bestturn;//决定转向的弧度
         int bestnum;
@@ -114,7 +114,7 @@ public class VFH1_3_1{
         }
 
         /** This method is call cyclically (20 times per second)  by the simulator engine. */
-        public void performBehavior() {  
+        public void performBehavior() {
         	if(distanceGoal()<0.5)
         	{
         		setRotationalVelocity(0);
@@ -133,28 +133,9 @@ public class VFH1_3_1{
         			        		if(ladar[n]==Double.POSITIVE_INFINITY)//如果超过量程，处理为量程
         			        			ladar[n]=liangcheng;
         			        	}
-        		        		/*if( getCounter()==0 );//测试radar数据是否正确，保存某时刻的radar到文本，在从matlab中打开
-        		        		{
-        		        			File file = new File("d:/1.txt");  
-        		        		        try  
-        		        		        {  
-        		        		            FileWriter fw = new FileWriter(file);  
-        		        		            BufferedWriter bw = new BufferedWriter (fw);
-        		        		            for(int i=0;i<361;i++)
-        		        		            {
-        		        		            	fw.write(Double.toString(ladar[i])); 
-        		        		            	fw.write("\n");
-        		        		            }
-        		        		            fw.close();  
-        		        		              
-        		        		        }  
-        		        		        catch (Exception e)  
-        		        		        {  
-        		        		            e.printStackTrace();  
-        		        		        } 
-        		        		}*/
+
         			        	//--------------------处理ladar数据:2,动态阈值处理成二值数组--------------------
-        			        	
+
         			        	/*ladarmin=ladar[0];//我的均值计算方法
         			        	ladarmax=ladar[0];
         			        	for(int i=0;i<361;i++)
@@ -166,51 +147,31 @@ public class VFH1_3_1{
         			        	}
         			        	ladarmid=(ladarmin+ladarmax)/2;
         			        	m_threshold = ladarmid;*/
-        			        	
+
         			        	/*double sum=0;//动态阈值，待调试
         			        	for(int i=0;i<61;i++)//提取6的倍数的点,求和取均值
         			        		sum=sum+ladar[i*6];
         			        	m_threshold=sum/61;*/
-        			        	
+
         			        	double sum=0;
         			        	  for(int i=0;i<361;i++)//所有点均值
         			        		sum=sum+ladar[i];
         			        	m_threshold=sum/361;
-        			        	
+
         			        	if(m_threshold>=liangcheng)
         			        		m_threshold = liangcheng;
-	
+
         			        	if(distanceGoal()<=m_threshold)//如果目标在可见范围内，设目标为刚好可见【锁定目标】
         			        		m_threshold=distanceGoal();
-        			        	
-        			        		
+
+
     			        		for(int i=0;i<361;i++)
     			        		{
     			        			if(ladar[i]>=m_threshold)	ladar_bin[i]=0;
     			        			else						ladar_bin[i]=1;
     			        		}
     			        		//均值阈值的情况下，不可能出现全封闭；而非中线走法又隐含了处理全开放的逻辑
-    			        		 		
-        		        		/*if( getCounter()==0 );//测试radar_bin数据是否正确，保存某时刻的radar_bin到文本，在从matlab中打开
-        		        		{
-        		        			File file = new File("d:/1.txt");  
-        		        		        try  
-        		        		        {  
-        		        		            FileWriter fw = new FileWriter(file);  
-        		        		            BufferedWriter bw = new BufferedWriter (fw);
-        		        		            for(int i=0;i<361;i++)
-        		        		            {
-        		        		            	fw.write(Integer.toString(ladar_bin[i])); 
-        		        		            	fw.write("\n");
-        		        		            }
-        		        		            fw.close();  
-        		        		              
-        		        		        }  
-        		        		        catch (Exception e)  
-        		        		        {  
-        		        		            e.printStackTrace();  
-        		        		        } 
-        		        		}*/
+
         			        	//--------------------处理ladar数据:3,分析记录可行区间--------------------
         			        	int num=0;
         			        	if(ladar_bin[0]==0)	startcount[num]=0;
@@ -230,37 +191,37 @@ public class VFH1_3_1{
         			        			break;
         			        		}
         			        	}
-        			        	if(ladar_bin[360]==0)	
+        			        	if(ladar_bin[360]==0)
         			        	{
         			        		endcount[num]=360;
         			        		num++;
         			        	}
-        			        	numcount=num;//没有必要+1        			        	
-        			        	
+        			        	numcount=num;//没有必要+1
+
         			        	for(int i=0;i<numcount;i++)//全部是弧度
         			        	{
         			        		startangle[i]=(startcount[i]/2.0)*(Math.PI/180)+Math.atan(carwidth/ladar[startcount[i]]);
         			        		endangle[i]=(endcount[i]/2.0)*(Math.PI/180)-Math.atan(carwidth/ladar[endcount[i]]);
         			        	}
-        						
+
         			        	//--------------------计算航向偏角，并转到极坐标系下（得到的角度是弧度）【经测试，数据正确】--------------------
-        			        	Vector3d velocity = getVelocity(); //获取速度 
+        			        	Vector3d velocity = getVelocity(); //获取速度
         						Vector2d direct = new Vector2d(velocity.z, velocity.x); //前进的方向向量
-        						
-        						getCoords(nowcoord); 
-        						Vector2d pos = new Vector2d(nowcoord.z, nowcoord.x); 
+
+        						getCoords(nowcoord);
+        						Vector2d pos = new Vector2d(nowcoord.z, nowcoord.x);
         						Vector2d toGoal = new Vector2d((goalcoord.x - pos.x), (goalcoord.y - pos.y));
-        						System.out.println("当前目标偏离航向："+goaltodirect(toGoal,direct)*(180/Math.PI));//########调试显示########	
+        						System.out.println("当前目标偏离航向："+goaltodirect(toGoal,direct)*(180/Math.PI));//########调试显示########
         						double goal_direct = goaltodirect(toGoal,direct)+Math.PI/2;
         			        	//--------------------分析比较得到最优转角--------------------
-        						bestnum=-1;//清空bestnumSystem.out.println("当前雷达动态阈值"+m_threshold);       						
+        						bestnum=-1;//清空bestnumSystem.out.println("当前雷达动态阈值"+m_threshold);
         						System.out.println("\n当前雷达动态阈值："+m_threshold+"\n潜在可行区域块数："+numcount);//########调试显示########
         						minangle=Math.PI;//每次清空为pi
         						for(int i=0;i<numcount;i++)
         						{
         							//########调试显示########
-        							System.out.println("编号"+i+"区块"+"，起线角："+startangle[i]*(180/Math.PI)+"，终线角："+endangle[i]*(180/Math.PI)+"，中线角："+(endangle[i]+startangle[i])/2.0*(180/Math.PI));	
-        							
+        							System.out.println("编号"+i+"区块"+"，起线角："+startangle[i]*(180/Math.PI)+"，终线角："+endangle[i]*(180/Math.PI)+"，中线角："+(endangle[i]+startangle[i])/2.0*(180/Math.PI));
+
         							if(startangle[i]<endangle[i])//潜在可行区域确实可行
         							{System.out.println("编号"+i+"区块实际可行！");//########调试显示########
         								//尝试该可行区域是否直达目标，如果是直接跳出，驶向目标
@@ -272,7 +233,7 @@ public class VFH1_3_1{
 	    								}
 	             						else
 	             							System.out.println("编号"+i+"区块不可直达目标！");//########调试显示########
-        							
+
         								double errorangle1 = Math.abs( startangle[i]-goal_direct );
         								if(errorangle1< minangle)
         								{
@@ -290,7 +251,7 @@ public class VFH1_3_1{
         							}
         							else
         								System.out.println("编号"+i+"区块实际不可行！");//########调试显示########
-        								
+
         						}
         						if(bestnum == -1)
         						{
@@ -301,44 +262,52 @@ public class VFH1_3_1{
         						{
             						//########调试显示########
             						System.out.println("\n决定区块："+bestnum+"，决定转向："+bestturn*(180/Math.PI));
-            						System.out.println("转向后目标偏离航向："+(goal_direct-Math.PI/2-bestturn)*(180/Math.PI));	
+            						System.out.println("转向后目标偏离航向："+(goal_direct-Math.PI/2-bestturn)*(180/Math.PI));
         						}
-			 
+
         			//++++++++行动
         					setRotationalVelocity(bestturn);
         					setTranslationalVelocity(0.1);
             	}
         	}
         }
-        
+
         /*计算到目标的距离，目前以此为停止条件
-         * 
+         *
          *
          */
-		public double distanceGoal() 
-        { 
-			Point3d currentPos = new Point3d(); 
+		public double distanceGoal()
+        {
+			Point3d currentPos = new Point3d();
 			getCoords(currentPos); //当前坐标
-			Point3d goalPos = new Point3d(goal3d.x, goal3d.y, goal3d.z); 
-		
-			return currentPos.distance(goalPos); 
-	
+			Point3d goalPos = new Point3d(goal3d.x, goal3d.y, goal3d.z);
+
+			return currentPos.distance(goalPos);
+
         }
-		
+
+        public double[]
+        /*机器人有720个sonar传感器，采用前361个模拟激光雷达。从
+         *正左方向起顺时针从0开始编号，激光雷达的标号范围0~360，
+         *此函数转换激光雷达编号为sonar编号。
+         *
+         *[in]      n   表示激光雷达编号
+         *[return]  转换为的sounar传感器的编号
+         */
         public int getControlcode(int n)
         {
         	if(n>=180 && n<=360)
         		return n-180;
         	else if(n>=0 && n<=179)
         		return n+540;
-        	else 
+        	else
         	{
         		System.out.println("转换异常");
         		return -1;
         	}
         }
-        public Vector3d getVelocity() 
-		{ 
+        public Vector3d getVelocity()
+		{
 			return this.linearVelocity; //线速度
 		}
         //==================================以下三个函数用于计算目标偏航向的角度=================================
@@ -347,15 +316,15 @@ public class VFH1_3_1{
         	double pianangle=angletoX(togoal)-angletoX(direct);
         	if( pianangle>Math.PI  )
         		return pianangle-2*Math.PI;
-        	else if(pianangle<-Math.PI) 
+        	else if(pianangle<-Math.PI)
         		return pianangle+2*Math.PI;
         	else
         		return pianangle;
         }
         public  int getQuadrant(Vector2d vector) //识别象限区
-    	{ 
-    		double x = vector.x; 
-    		double y = vector.y; 
+    	{
+    		double x = vector.x;
+    		double y = vector.y;
     		if((x>0 && y>0)||(x>0 && y==0))
     			return 1;
     		else if((x<0 && y>0)||(x==0 && y>0))
@@ -383,7 +352,7 @@ public class VFH1_3_1{
         		return Math.PI/2;
         	}
         }
-   
+
     }
 
     /** Describe the environement */
@@ -424,4 +393,4 @@ public class VFH1_3_1{
         Simbad frame = new Simbad(new MyEnv(), false);
     }
 
-} 
+}

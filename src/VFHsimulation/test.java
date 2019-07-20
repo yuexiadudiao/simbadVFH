@@ -46,11 +46,11 @@ public class test {
 	
             	if(sonars.getMeasurement(0)==Double.POSITIVE_INFINITY)
             	{
-            		System.out.println("Ã»ÓĞÊı¾İ£¡");
+            		System.out.println("æ²¡æœ‰æ•°æ®ï¼");
             	}
             	else
             	{
-            		System.out.println("ÓĞÊı¾İ£¬Êı¾İÎª£º"+sonars.getMeasurement(0));
+            		System.out.println("æœ‰æ•°æ®ï¼Œæ•°æ®ä¸ºï¼š"+sonars.getMeasurement(0));
             	}
             }
         }

@@ -3,33 +3,33 @@ package VFHsimulation;
  * Version:1.2.1
  * Author :yin
  * Date   :2016-8-18
- * About  :VFHµÄ·ÂÕæ³ÌĞò£¬ÖÜÉí720¸ö´«¸ĞÆ÷£¬Ö»Ê¹ÓÃÇ°ÃæµÄ361¸ö¡£´¦ÀíÀ×´ï´«¸ĞÆ÷ÎªÉÈĞÎ
- * Çø¿é¡£ÕÒÒ»¸ö¾¡¿ÉÄÜ¿¿½üÄ¿±êµÄÒ»¸ö·½ÏòÎª¾ö¶¨×ªÏò¡£ladar´«¸ĞÆ÷Á¿³ÌĞŞ¸ÄÎª8Ã×
+ * About  :VFHçš„ä»¿çœŸç¨‹åºï¼Œå‘¨èº«720ä¸ªä¼ æ„Ÿå™¨ï¼Œåªä½¿ç”¨å‰é¢çš„361ä¸ªã€‚å¤„ç†é›·è¾¾ä¼ æ„Ÿå™¨ä¸ºæ‰‡å½¢
+ * åŒºå—ã€‚æ‰¾ä¸€ä¸ªå°½å¯èƒ½é è¿‘ç›®æ ‡çš„ä¸€ä¸ªæ–¹å‘ä¸ºå†³å®šè½¬å‘ã€‚ladarä¼ æ„Ÿå™¨é‡ç¨‹ä¿®æ”¹ä¸º8ç±³
  * ################################ FIX ################################
  * Fix Version:1.0
  * Fix Author :yin
  * Fix Date   :2016-8-13
- * Fix About  :Íê³É»ù±¾µÄ³ÌĞò¹¦ÄÜ£¬ĞŞÕıÁËÒ»Ğ©³£ÓÃµÄ´íÎó£¬²âÊÔÔËĞĞÍ¨¹ı¡£¼ÆËã¿ÉĞĞÇøÓò
- * µÄ¿í¶È¡£²âÊÔÖĞÓĞÅö×²ÎÊÌâ¡£
+ * Fix About  :å®ŒæˆåŸºæœ¬çš„ç¨‹åºåŠŸèƒ½ï¼Œä¿®æ­£äº†ä¸€äº›å¸¸ç”¨çš„é”™è¯¯ï¼Œæµ‹è¯•è¿è¡Œé€šè¿‡ã€‚è®¡ç®—å¯è¡ŒåŒºåŸŸ
+ * çš„å®½åº¦ã€‚æµ‹è¯•ä¸­æœ‰ç¢°æ’é—®é¢˜ã€‚
  * ################################ FIX ################################
  * Fix Version:1.1
  * Fix Author :yin
  * Fix Date   :2016-8-14
- * Fix About  :²»¼ÆËã¿ÉĞĞÇøÓòµÄ¿í¶È£¬¶øÊÇÒÔÒ»¸ö°²È«°ë¾¶À´¼õĞ¡¿ÉĞĞµÄ·½Ïò½Ç¶È£¬²¢ÇÒ
- * Èç¹û¿ÉĞĞÇøÓò°üº¬µ½Ä¿±êµÄº½Ïò£¬¾ÍÖ±½ÓÏò×ÅÄ¿±ê¡£Èç¹û²»ÊÇ£¬¾Í×ß×î¿¿½üÄ¿±êº½ÏòµÄ¿ÉĞĞ
- * ÇøÓò±ß½ç¡£
+ * Fix About  :ä¸è®¡ç®—å¯è¡ŒåŒºåŸŸçš„å®½åº¦ï¼Œè€Œæ˜¯ä»¥ä¸€ä¸ªå®‰å…¨åŠå¾„æ¥å‡å°å¯è¡Œçš„æ–¹å‘è§’åº¦ï¼Œå¹¶ä¸”
+ * å¦‚æœå¯è¡ŒåŒºåŸŸåŒ…å«åˆ°ç›®æ ‡çš„èˆªå‘ï¼Œå°±ç›´æ¥å‘ç€ç›®æ ‡ã€‚å¦‚æœä¸æ˜¯ï¼Œå°±èµ°æœ€é è¿‘ç›®æ ‡èˆªå‘çš„å¯è¡Œ
+ * åŒºåŸŸè¾¹ç•Œã€‚
  * ################################ FIX ################################
  * Fix Version:1.2
  * Fix Author :yin
  * Fix Date   :2016-8-18
- * Fix About  :¶ÔÉÏÒ»¸ö°æ±¾µÄÓÅ»¯×öµ÷ÊÔ£¬ĞŞ¸ÄÊä³öÊı¾İ£¬°ÑÖØÒªµÄµ÷ÊÔ²ÎÊıÏÔÊ¾³öÀ´¡£
- * ¿ªÆôÁË¶¯Ì¬ãĞÖµµÄ¹¦ÄÜ¡£½«´Ë°æ±¾×÷ÎªÎŞÈË³µÏîÄ¿ÑéÊÕ£¬·ÂÕæÊÓÆµÂ¼ÖÆµÄ°æ±¾(Á¿³Ì5Ã×£¬»úÆ÷ÈË°ë
- * ¾¶0.3Ã×)¡£
+ * Fix About  :å¯¹ä¸Šä¸€ä¸ªç‰ˆæœ¬çš„ä¼˜åŒ–åšè°ƒè¯•ï¼Œä¿®æ”¹è¾“å‡ºæ•°æ®ï¼ŒæŠŠé‡è¦çš„è°ƒè¯•å‚æ•°æ˜¾ç¤ºå‡ºæ¥ã€‚
+ * å¼€å¯äº†åŠ¨æ€é˜ˆå€¼çš„åŠŸèƒ½ã€‚å°†æ­¤ç‰ˆæœ¬ä½œä¸ºæ— äººè½¦é¡¹ç›®éªŒæ”¶ï¼Œä»¿çœŸè§†é¢‘å½•åˆ¶çš„ç‰ˆæœ¬(é‡ç¨‹5ç±³ï¼Œæœºå™¨äººåŠ
+ * å¾„0.3ç±³)ã€‚
  * ################################ FIX ################################
  * Fix Version:1.2.1
  * Fix Author :yin
  * Fix Date   :2016-8-18 night
- * Fix About  :ĞŞ¸´ÁË0Ö¡»úÆ÷ÈËËÙ¶È·½ÏòµÄ´íÎó£¬Ä¬ÈÏ»úÆ÷ÈË0Ö¡ÃæzÕıÏò
+ * Fix About  :ä¿®å¤äº†0å¸§æœºå™¨äººé€Ÿåº¦æ–¹å‘çš„é”™è¯¯ï¼Œé»˜è®¤æœºå™¨äºº0å¸§é¢zæ­£å‘
  ***********************************************************************/
 
 import simbad.gui.Simbad;
@@ -51,31 +51,31 @@ public class VFH1_2_1{
 
         RangeSensorBelt sonars;
 
-        
-        Vector2d goalcoord = new Vector2d(8,8); //´æ´¢Ä¿±êµã
+
+        Vector2d goalcoord = new Vector2d(8,8); //å­˜å‚¨ç›®æ ‡ç‚¹
         Vector3d goal3d = new Vector3d(8, 0,8);
         double carwidth=2;
-        
-        //--------------------¼ÆËãº½ÏòÆ«½ÇÓÃ--------------------
-        Point3d nowcoord = new Point3d();//´Ë¿ÌµÄ×ø±ê
-        double errorangle;//¼ÆËãº½ÏòÆ«½Ç
-        
-        //--------------------´¦ÀíladarÊı¾İÓÃ--------------------
-        double ladar[] = new double[361];//´æ´¢»úÆ÷ÈËladrÊı¾İ
-        int ladar_bin[] = new int[361];//´æ´¢»úÆ÷ÈËladrµÄ¶şÖµÊı¾İ
-        
-        float liangcheng=5f;//Á¿³Ì
-        double m_threshold;//»·¾³¶¯Ì¬ãĞÖµ£¬ÆäÓë»·¾³ÊèÃÜÓĞ¹Ø
-        
-        int numcount = 0;//¼ÇÂ¼Çø¿éÊıÁ¿
-        int startcount[] = new int[400];//¼ÇÂ¼Çø¿éÆğµã±àºÅ
-        int endcount[] = new int[400];//¼ÇÂ¼Çø¿éÖÕµã±àºÅ
-        double startangle[] = new double[400];//¼ÇÂ¼Çø¿éÆğÏß»¡¶È
-        double endangle[] = new double[400];//¼ÇÂ¼Çø¿éÖÕÏß»¡¶È
-        double midangle[] = new double[400];//¼ÇÂ¼Çø¿éÖĞÏß»¡¶È
-              
+
+        //--------------------è®¡ç®—èˆªå‘åè§’ç”¨--------------------
+        Point3d nowcoord = new Point3d();//æ­¤åˆ»çš„åæ ‡
+        double errorangle;//è®¡ç®—èˆªå‘åè§’
+
+        //--------------------å¤„ç†ladaræ•°æ®ç”¨--------------------
+        double ladar[] = new double[361];//å­˜å‚¨æœºå™¨äººladræ•°æ®
+        int ladar_bin[] = new int[361];//å­˜å‚¨æœºå™¨äººladrçš„äºŒå€¼æ•°æ®
+
+        float liangcheng=5f;//é‡ç¨‹
+        double m_threshold;//ç¯å¢ƒåŠ¨æ€é˜ˆå€¼ï¼Œå…¶ä¸ç¯å¢ƒç–å¯†æœ‰å…³
+
+        int numcount = 0;//è®°å½•åŒºå—æ•°é‡
+        int startcount[] = new int[400];//è®°å½•åŒºå—èµ·ç‚¹ç¼–å·
+        int endcount[] = new int[400];//è®°å½•åŒºå—ç»ˆç‚¹ç¼–å·
+        double startangle[] = new double[400];//è®°å½•åŒºå—èµ·çº¿å¼§åº¦
+        double endangle[] = new double[400];//è®°å½•åŒºå—ç»ˆçº¿å¼§åº¦
+        double midangle[] = new double[400];//è®°å½•åŒºå—ä¸­çº¿å¼§åº¦
+
         double minangle;
-        double bestturn;//¾ö¶¨×ªÏòµÄ»¡¶È
+        double bestturn;//å†³å®šè½¬å‘çš„å¼§åº¦
         int bestnum;
 
         public Robot(Vector3d position, String name) {
@@ -91,7 +91,7 @@ public class VFH1_2_1{
         }
 
         /** This method is call cyclically (20 times per second)  by the simulator engine. */
-        public void performBehavior() {  
+        public void performBehavior() {
         	if(checkGoal())
         	{
         		setRotationalVelocity(0);
@@ -99,81 +99,81 @@ public class VFH1_2_1{
         	}
         	else
         	{
-            	if(getCounter()%20==0)//Îª·ÀÖ¹¾çÁÒ»Î¶¯£¬Ã¿10Ö¡×öÒ»´Î
+            	if(getCounter()%20==0)//ä¸ºé˜²æ­¢å‰§çƒˆæ™ƒåŠ¨ï¼Œæ¯10å¸§åšä¸€æ¬¡
             	{System.out.println("-----------------------------------------------------------------");
-                    //++++++++Ë¼¿¼
-        			        	//--------------------´¦ÀíladarÊı¾İ:1,¶ÁÈ¡´«¸ĞÆ÷Êı¾İµ½Êı×é--------------------
+                    //++++++++æ€è€ƒ
+        			        	//--------------------å¤„ç†ladaræ•°æ®:1,è¯»å–ä¼ æ„Ÿå™¨æ•°æ®åˆ°æ•°ç»„--------------------
         			        	for(int n=0;n<361;n++)
         			        	{
-        			        		ladar[n]=sonars.getMeasurement(getControlcode(n));//»ñÈ¡Êı¾İ
-        			        		if(ladar[n]==Double.POSITIVE_INFINITY)//Èç¹û³¬¹ıÁ¿³Ì£¬´¦ÀíÎªÁ¿³Ì
+        			        		ladar[n]=sonars.getMeasurement(getControlcode(n));//è·å–æ•°æ®
+        			        		if(ladar[n]==Double.POSITIVE_INFINITY)//å¦‚æœè¶…è¿‡é‡ç¨‹ï¼Œå¤„ç†ä¸ºé‡ç¨‹
         			        			ladar[n]=liangcheng;
         			        	}
-        		        		/*if( getCounter()==0 );//²âÊÔradarÊı¾İÊÇ·ñÕıÈ·£¬±£´æÄ³Ê±¿ÌµÄradarµ½ÎÄ±¾£¬ÔÚ´ÓmatlabÖĞ´ò¿ª
+        		        		/*if( getCounter()==0 );//æµ‹è¯•radaræ•°æ®æ˜¯å¦æ­£ç¡®ï¼Œä¿å­˜æŸæ—¶åˆ»çš„radaråˆ°æ–‡æœ¬ï¼Œåœ¨ä»matlabä¸­æ‰“å¼€
         		        		{
-        		        			File file = new File("d:/1.txt");  
-        		        		        try  
-        		        		        {  
-        		        		            FileWriter fw = new FileWriter(file);  
+        		        			File file = new File("d:/1.txt");
+        		        		        try
+        		        		        {
+        		        		            FileWriter fw = new FileWriter(file);
         		        		            BufferedWriter bw = new BufferedWriter (fw);
         		        		            for(int i=0;i<361;i++)
         		        		            {
-        		        		            	fw.write(Double.toString(ladar[i])); 
+        		        		            	fw.write(Double.toString(ladar[i]));
         		        		            	fw.write("\n");
         		        		            }
-        		        		            fw.close();  
-        		        		              
-        		        		        }  
-        		        		        catch (Exception e)  
-        		        		        {  
-        		        		            e.printStackTrace();  
-        		        		        } 
+        		        		            fw.close();
+
+        		        		        }
+        		        		        catch (Exception e)
+        		        		        {
+        		        		            e.printStackTrace();
+        		        		        }
         		        		}*/
-        			        	//--------------------´¦ÀíladarÊı¾İ:2,¶¯Ì¬ãĞÖµ´¦Àí³É¶şÖµÊı×é--------------------
-        			        	
-        			        	
-        			        	double sum=0;//¶¯Ì¬ãĞÖµ£¬´ıµ÷ÊÔ
-        			        	for(int i=0;i<61;i++)//ÌáÈ¡6µÄ±¶ÊıµÄµã,ÇóºÍÈ¡¾ùÖµ
+        			        	//--------------------å¤„ç†ladaræ•°æ®:2,åŠ¨æ€é˜ˆå€¼å¤„ç†æˆäºŒå€¼æ•°ç»„--------------------
+
+
+        			        	double sum=0;//åŠ¨æ€é˜ˆå€¼ï¼Œå¾…è°ƒè¯•
+        			        	for(int i=0;i<61;i++)//æå–6çš„å€æ•°çš„ç‚¹,æ±‚å’Œå–å‡å€¼
         			        		sum=sum+ladar[i*6];
         			        	m_threshold=sum/61;
-        			        	
-        			        	/*for(int i=0;i<361;i++)//ËùÓĞµã¾ùÖµ
+
+        			        	/*for(int i=0;i<361;i++)//æ‰€æœ‰ç‚¹å‡å€¼
         			        		sum=sum+ladar[i];
         			        	m_threshold=sum/361;*/
-        			        	
+
         			        	if(m_threshold>=liangcheng)
         			        		m_threshold = liangcheng;
-        			        		
+
     			        		for(int i=0;i<361;i++)
     			        		{
     			        			if(ladar[i]>=m_threshold)	ladar_bin[i]=0;
     			        			else						ladar_bin[i]=1;
     			        		}
-    			        		
-    			        		
-    			        		
-    			        		
-        		        		/*if( getCounter()==0 );//²âÊÔradar_binÊı¾İÊÇ·ñÕıÈ·£¬±£´æÄ³Ê±¿ÌµÄradar_binµ½ÎÄ±¾£¬ÔÚ´ÓmatlabÖĞ´ò¿ª
+
+
+
+
+        		        		/*if( getCounter()==0 );//æµ‹è¯•radar_binæ•°æ®æ˜¯å¦æ­£ç¡®ï¼Œä¿å­˜æŸæ—¶åˆ»çš„radar_binåˆ°æ–‡æœ¬ï¼Œåœ¨ä»matlabä¸­æ‰“å¼€
         		        		{
-        		        			File file = new File("d:/1.txt");  
-        		        		        try  
-        		        		        {  
-        		        		            FileWriter fw = new FileWriter(file);  
+        		        			File file = new File("d:/1.txt");
+        		        		        try
+        		        		        {
+        		        		            FileWriter fw = new FileWriter(file);
         		        		            BufferedWriter bw = new BufferedWriter (fw);
         		        		            for(int i=0;i<361;i++)
         		        		            {
-        		        		            	fw.write(Integer.toString(ladar_bin[i])); 
+        		        		            	fw.write(Integer.toString(ladar_bin[i]));
         		        		            	fw.write("\n");
         		        		            }
-        		        		            fw.close();  
-        		        		              
-        		        		        }  
-        		        		        catch (Exception e)  
-        		        		        {  
-        		        		            e.printStackTrace();  
-        		        		        } 
+        		        		            fw.close();
+
+        		        		        }
+        		        		        catch (Exception e)
+        		        		        {
+        		        		            e.printStackTrace();
+        		        		        }
         		        		}*/
-        			        	//--------------------´¦ÀíladarÊı¾İ:3,·ÖÎö¼ÇÂ¼¿ÉĞĞÇø¼ä--------------------
+        			        	//--------------------å¤„ç†ladaræ•°æ®:3,åˆ†æè®°å½•å¯è¡ŒåŒºé—´--------------------
         			        	int num=0;
         			        	if(ladar_bin[0]==0)	startcount[num]=0;
         			        	for(int i=1;i<361;i++)
@@ -192,49 +192,49 @@ public class VFH1_2_1{
         			        			break;
         			        		}
         			        	}
-        			        	if(ladar_bin[360]==0)	
+        			        	if(ladar_bin[360]==0)
         			        	{
         			        		endcount[num]=360;
         			        		num++;
         			        	}
-        			        	numcount=num;//Ã»ÓĞ±ØÒª+1        			        	
-        			        	
-        			        	for(int i=0;i<numcount;i++)//È«²¿ÊÇ»¡¶È
+        			        	numcount=num;//æ²¡æœ‰å¿…è¦+1
+
+        			        	for(int i=0;i<numcount;i++)//å…¨éƒ¨æ˜¯å¼§åº¦
         			        	{
         			        		startangle[i]=(startcount[i]/2.0)*(Math.PI/180)+Math.atan(carwidth/ladar[startcount[i]]);
         			        		endangle[i]=(endcount[i]/2.0)*(Math.PI/180)-Math.atan(carwidth/ladar[endcount[i]]);
         			        	}
-        						
-        			        	//--------------------¼ÆËãº½ÏòÆ«½Ç£¬²¢×ªµ½¼«×ø±êÏµÏÂ£¨µÃµ½µÄ½Ç¶ÈÊÇ»¡¶È£©¡¾¾­²âÊÔ£¬Êı¾İÕıÈ·¡¿--------------------
-        			        	Vector3d velocity = getVelocity(); //»ñÈ¡ËÙ¶È 
-        						Vector2d direct = new Vector2d(velocity.z, velocity.x); //Ç°½øµÄ·½ÏòÏòÁ¿
-        						
-        						getCoords(nowcoord); 
-        						Vector2d pos = new Vector2d(nowcoord.z, nowcoord.x); 
+
+        			        	//--------------------è®¡ç®—èˆªå‘åè§’ï¼Œå¹¶è½¬åˆ°æåæ ‡ç³»ä¸‹ï¼ˆå¾—åˆ°çš„è§’åº¦æ˜¯å¼§åº¦ï¼‰ã€ç»æµ‹è¯•ï¼Œæ•°æ®æ­£ç¡®ã€‘--------------------
+        			        	Vector3d velocity = getVelocity(); //è·å–é€Ÿåº¦
+        						Vector2d direct = new Vector2d(velocity.z, velocity.x); //å‰è¿›çš„æ–¹å‘å‘é‡
+
+        						getCoords(nowcoord);
+        						Vector2d pos = new Vector2d(nowcoord.z, nowcoord.x);
         						Vector2d toGoal = new Vector2d((goalcoord.x - pos.x), (goalcoord.y - pos.y));
-        						System.out.println("µ±Ç°Ä¿±êÆ«Àëº½Ïò£º"+goaltodirect(toGoal,direct)*(180/Math.PI));//########µ÷ÊÔÏÔÊ¾########	
+        						System.out.println("å½“å‰ç›®æ ‡åç¦»èˆªå‘ï¼š"+goaltodirect(toGoal,direct)*(180/Math.PI));//########è°ƒè¯•æ˜¾ç¤º########
         						double goal_direct = goaltodirect(toGoal,direct)+Math.PI/2;
-        			        	//--------------------·ÖÎö±È½ÏµÃµ½×îÓÅ×ª½Ç--------------------
-        						bestnum=-1;//Çå¿ÕbestnumSystem.out.println("µ±Ç°À×´ï¶¯Ì¬ãĞÖµ"+m_threshold);       						
-        						System.out.println("\nµ±Ç°À×´ï¶¯Ì¬ãĞÖµ£º"+m_threshold+"\nÇ±ÔÚ¿ÉĞĞÇøÓò¿éÊı£º"+numcount);//########µ÷ÊÔÏÔÊ¾########
-        						minangle=Math.PI;//Ã¿´ÎÇå¿ÕÎªpi
+        			        	//--------------------åˆ†ææ¯”è¾ƒå¾—åˆ°æœ€ä¼˜è½¬è§’--------------------
+        						bestnum=-1;//æ¸…ç©ºbestnumSystem.out.println("å½“å‰é›·è¾¾åŠ¨æ€é˜ˆå€¼"+m_threshold);
+        						System.out.println("\nå½“å‰é›·è¾¾åŠ¨æ€é˜ˆå€¼ï¼š"+m_threshold+"\næ½œåœ¨å¯è¡ŒåŒºåŸŸå—æ•°ï¼š"+numcount);//########è°ƒè¯•æ˜¾ç¤º########
+        						minangle=Math.PI;//æ¯æ¬¡æ¸…ç©ºä¸ºpi
         						for(int i=0;i<numcount;i++)
         						{
-        							//########µ÷ÊÔÏÔÊ¾########
-        							System.out.println("±àºÅ"+i+"Çø¿é"+"£¬ÆğÏß½Ç£º"+startangle[i]*(180/Math.PI)+"£¬ÖÕÏß½Ç£º"+endangle[i]*(180/Math.PI)+"£¬ÖĞÏß½Ç£º"+(endangle[i]+startangle[i])/2.0*(180/Math.PI));	
-        							
-        							if(startangle[i]<endangle[i])//Ç±ÔÚ¿ÉĞĞÇøÓòÈ·Êµ¿ÉĞĞ
-        							{System.out.println("±àºÅ"+i+"Çø¿éÊµ¼Ê¿ÉĞĞ£¡");//########µ÷ÊÔÏÔÊ¾########
-        								//³¢ÊÔ¸Ã¿ÉĞĞÇøÓòÊÇ·ñÖ±´ïÄ¿±ê£¬Èç¹ûÊÇÖ±½ÓÌø³ö£¬Ê»ÏòÄ¿±ê
-	             						if(startangle[i]<=goal_direct && goal_direct<=endangle[i])//Èç¹ûÇ¡ºÃÂäÔÚ¿ÉĞĞÇøÓòÄÚ
-	    								{System.out.println("±àºÅ"+i+"Çø¿éÖ±´ïÄ¿±ê£¡");//########µ÷ÊÔÏÔÊ¾########
-	    									bestturn = goal_direct-Math.PI/2;//Ö±½ÓÊ»ÏòÄ¿±ê
+        							//########è°ƒè¯•æ˜¾ç¤º########
+        							System.out.println("ç¼–å·"+i+"åŒºå—"+"ï¼Œèµ·çº¿è§’ï¼š"+startangle[i]*(180/Math.PI)+"ï¼Œç»ˆçº¿è§’ï¼š"+endangle[i]*(180/Math.PI)+"ï¼Œä¸­çº¿è§’ï¼š"+(endangle[i]+startangle[i])/2.0*(180/Math.PI));
+
+        							if(startangle[i]<endangle[i])//æ½œåœ¨å¯è¡ŒåŒºåŸŸç¡®å®å¯è¡Œ
+        							{System.out.println("ç¼–å·"+i+"åŒºå—å®é™…å¯è¡Œï¼");//########è°ƒè¯•æ˜¾ç¤º########
+        								//å°è¯•è¯¥å¯è¡ŒåŒºåŸŸæ˜¯å¦ç›´è¾¾ç›®æ ‡ï¼Œå¦‚æœæ˜¯ç›´æ¥è·³å‡ºï¼Œé©¶å‘ç›®æ ‡
+	             						if(startangle[i]<=goal_direct && goal_direct<=endangle[i])//å¦‚æœæ°å¥½è½åœ¨å¯è¡ŒåŒºåŸŸå†…
+	    								{System.out.println("ç¼–å·"+i+"åŒºå—ç›´è¾¾ç›®æ ‡ï¼");//########è°ƒè¯•æ˜¾ç¤º########
+	    									bestturn = goal_direct-Math.PI/2;//ç›´æ¥é©¶å‘ç›®æ ‡
 	    									bestnum=i;
 	    									break;
 	    								}
 	             						else
-	             							System.out.println("±àºÅ"+i+"Çø¿é²»¿ÉÖ±´ïÄ¿±ê£¡");//########µ÷ÊÔÏÔÊ¾########
-        							
+	             							System.out.println("ç¼–å·"+i+"åŒºå—ä¸å¯ç›´è¾¾ç›®æ ‡ï¼");//########è°ƒè¯•æ˜¾ç¤º########
+
         								double errorangle1 = Math.abs( startangle[i]-goal_direct );
         								if(errorangle1< minangle)
         								{
@@ -251,60 +251,60 @@ public class VFH1_2_1{
         								}
         							}
         							else
-        								System.out.println("±àºÅ"+i+"Çø¿éÊµ¼Ê²»¿ÉĞĞ£¡");//########µ÷ÊÔÏÔÊ¾########
-        								
+        								System.out.println("ç¼–å·"+i+"åŒºå—å®é™…ä¸å¯è¡Œï¼");//########è°ƒè¯•æ˜¾ç¤º########
+
         						}
-        						//########µ÷ÊÔÏÔÊ¾########
-        						System.out.println("\n¾ö¶¨Çø¿é£º"+bestnum+"£¬¾ö¶¨×ªÏò£º"+bestturn*(180/Math.PI));
-        						System.out.println("×ªÏòºóÄ¿±êÆ«Àëº½Ïò£º"+(goal_direct-Math.PI/2-bestturn)*(180/Math.PI));				 
-        			//++++++++ĞĞ¶¯
+        						//########è°ƒè¯•æ˜¾ç¤º########
+        						System.out.println("\nå†³å®šåŒºå—ï¼š"+bestnum+"ï¼Œå†³å®šè½¬å‘ï¼š"+bestturn*(180/Math.PI));
+        						System.out.println("è½¬å‘åç›®æ ‡åç¦»èˆªå‘ï¼š"+(goal_direct-Math.PI/2-bestturn)*(180/Math.PI));
+        			//++++++++è¡ŒåŠ¨
         					setRotationalVelocity(bestturn);
         					setTranslationalVelocity(0.6);
             	}
         	}
         }
-		private boolean checkGoal() //¼ì²éÊÇ·ñµ½´ïÄ¿µÄµØ
-        { 
-			Point3d currentPos = new Point3d(); 
-			getCoords(currentPos); //µ±Ç°×ø±ê
-			Point3d goalPos = new Point3d(goal3d.x, goal3d.y, goal3d.z); 
-		
-			if (currentPos.distance(goalPos) <= 0.5) // Èç¹ûµ±Ç°¾àÀëÄ¿±êµãĞ¡ÓÚ0.5ÄÇÃ´¼´ÈÏÎªÊÇµ½´ï 
-				return true; 
-			 else 
-				return false; 
-        } 
+		private boolean checkGoal() //æ£€æŸ¥æ˜¯å¦åˆ°è¾¾ç›®çš„åœ°
+        {
+			Point3d currentPos = new Point3d();
+			getCoords(currentPos); //å½“å‰åæ ‡
+			Point3d goalPos = new Point3d(goal3d.x, goal3d.y, goal3d.z);
+
+			if (currentPos.distance(goalPos) <= 0.5) // å¦‚æœå½“å‰è·ç¦»ç›®æ ‡ç‚¹å°äº0.5é‚£ä¹ˆå³è®¤ä¸ºæ˜¯åˆ°è¾¾
+				return true;
+			 else
+				return false;
+        }
         public int getControlcode(int n)
         {
         	if(n>=180 && n<=360)
         		return n-180;
         	else if(n>=0 && n<=179)
         		return n+540;
-        	else 
+        	else
         	{
-        		System.out.println("×ª»»Òì³£");
+        		System.out.println("è½¬æ¢å¼‚å¸¸");
         		return -1;
         	}
         }
-        public Vector3d getVelocity() 
-		{ 
-			return this.linearVelocity; //ÏßËÙ¶È
+        public Vector3d getVelocity()
+		{
+			return this.linearVelocity; //çº¿é€Ÿåº¦
 		}
-        //==================================ÒÔÏÂÈı¸öº¯ÊıÓÃÓÚ¼ÆËãÄ¿±êÆ«º½ÏòµÄ½Ç¶È=================================
+        //==================================ä»¥ä¸‹ä¸‰ä¸ªå‡½æ•°ç”¨äºè®¡ç®—ç›®æ ‡åèˆªå‘çš„è§’åº¦=================================
         public double goaltodirect(Vector2d togoal,Vector2d direct)
         {
         	double pianangle=angletoX(togoal)-angletoX(direct);
         	if( pianangle>Math.PI  )
         		return pianangle-2*Math.PI;
-        	else if(pianangle<-Math.PI) 
+        	else if(pianangle<-Math.PI)
         		return pianangle+2*Math.PI;
         	else
         		return pianangle;
         }
-        public  int getQuadrant(Vector2d vector) //Ê¶±ğÏóÏŞÇø
-    	{ 
-    		double x = vector.x; 
-    		double y = vector.y; 
+        public  int getQuadrant(Vector2d vector) //è¯†åˆ«è±¡é™åŒº
+    	{
+    		double x = vector.x;
+    		double y = vector.y;
     		if((x>0 && y>0)||(x>0 && y==0))
     			return 1;
     		else if((x<0 && y>0)||(x==0 && y>0))
@@ -315,7 +315,7 @@ public class VFH1_2_1{
     			return 4;
     		else
     		{
-    			System.out.println("£¨0£¬0£©ÎŞ·¨Ê¶±ğÏóÏŞÇø£¡");
+    			System.out.println("ï¼ˆ0ï¼Œ0ï¼‰æ— æ³•è¯†åˆ«è±¡é™åŒºï¼");
     			return -1;
     		}
     	}
@@ -328,11 +328,11 @@ public class VFH1_2_1{
         	case 3:return vector.angle(new Vector2d(-1,0))+(Math.PI/2)*2;
         	case 4:return vector.angle(new Vector2d(0,-1))+(Math.PI/2)*3;
         	default:
-        		System.out.println("´¦ÀíÎªÃæzÕıÏò");
+        		System.out.println("å¤„ç†ä¸ºé¢zæ­£å‘");
         		return Math.PI/2;
         	}
         }
-   
+
     }
 
     /** Describe the environement */
@@ -370,4 +370,4 @@ public class VFH1_2_1{
         // create Simbad instance with given environment
         Simbad frame = new Simbad(new MyEnv(), false);
     }
-} 
+}
